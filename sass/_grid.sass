@@ -1,0 +1,140 @@
+*
+    box-sizing: border-box
+
+.container
+    max-width: 1100px
+    margin: auto
+
+@media (max-width: 1440px)
+    .main
+        background: #046DEC url(../img/color.png) no-repeat top -60px right -100px
+
+@media (max-width: 1150px)
+    .main
+        background: #046DEC url(../img/color.png) no-repeat top -100px right -150px
+    .container
+        padding:
+            left: 20px
+            right: 20px
+@media (max-width: 1000px)
+    .main
+        background: #046DEC url(../img/color.png) no-repeat top -150px right -250px
+@media (max-width: 877px)
+
+    .main
+        background: #046DEC url(../img/color.png) no-repeat top -200px right -300px
+@media (max-width: 735px)
+    .main
+        background: #046DEC
+        &-wrap
+            padding-top: 20px
+        &__title
+            &__title
+                    margin-bottom: 10px
+        &__button
+            min-width: 100%
+            min-height: 50px
+            font-size: 20px
+            align-self: center
+            margin-bottom: 50px
+
+    .header
+        &__tel
+            a
+                font-size: 20px
+        &__line
+            margin-right: 10px
+    h1
+        font-size: 36px
+    h2
+        font-size: 30px
+        text-align: center
+    h4
+        font-size: 20px
+    
+    .about
+        p
+            font-size: 16px
+            &:nth-child(3)
+                width: 100%
+                z-index: 1
+            &:nth-child(5)
+                margin-top: 20px
+                align-self: flex-start
+            &:nth-child(8)
+                margin-top: 20px
+                text-align: left
+                align-self: flex-start
+                width: 100%
+                z-index: 1
+        ul
+            margin-left: 0px !important
+            li
+                font-size: 16px
+        strong
+            margin-top: 20px
+            font-size: 16px
+            align-self: flex-start
+            text-align: left
+
+        &__img
+            &__first
+                display: none
+            &__second
+                display: none
+
+        &__features
+            flex-direction: column
+            margin-top: 0px
+            font-size: 19px
+            text-align: left
+            &__item
+                margin-right: 0
+                &:first-child
+                    img
+                        margin-right: 37.5px
+                        margin-left: 22.5px
+                img
+                    margin-right: 15px
+                    margin-bottom: 20px
+                &:last-child
+                    img
+                        margin-left: 10px
+
+    .form
+        input
+            width: 100%
+            height: 60px
+            margin-top: 30px
+            margin-bottom: 60px
+            padding: 15px
+    .footer
+        font-size: 10px
+    
+@media (max-width: 424px)
+    .header
+        &__line
+            margin-right: 10px
+        &__tel
+            a
+                font-size: 16px
+    h1
+        font-size: 30px
+    h2
+        font-size: 28px
+    h4
+        font-size: 20px
+
+@media (max-width: 374px)
+    .header
+        &__tel
+            a
+                display: none
+        &__line
+            display: none
+    h1
+        font-size: 26px
+    h2
+        font-size: 26px
+    h4
+        font-size: 15px
